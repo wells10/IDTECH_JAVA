@@ -1,0 +1,13 @@
+//slice
+let banana = ["Chunk 1", "Chunk 2", "Chunk 3", "Chunk 4", "Chunk 5"];
+chunks = banana.slice(0, 3); //returns chunks 1-2 in a new array - the last index number is not included.
+//array.slice(start index, end index)
+
+console.table(chunks);
+console.table(banana);
+
+let hamburger = ["Top bun", "Pickle", "Ketchup", "Patty", "Bottom bun"];
+//Say you want to remove pickles from this array. Use the splice function: 
+//array.splice(starting index, elements to remove, elements to add)
+let newBurger = hamburger.splice(1, 1, "lettuce");
+console.table(hamburger);
